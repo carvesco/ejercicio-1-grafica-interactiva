@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="es">
+        <title>Indice</title>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <script src="map.js"></script>
+    </head>
+    <body class="body6">
+        <!--barra de navegacion-->
+        <div class="title"><h1>Lord of the Rings</h1></div>
+        <div class="navbar">
+            <a class="item" href="index.html" target="_self">Inicio</a>
+            <a class="item" href="location.html">Ubicación</a>
+            <a class="item" href="characters.html">Personajes</a>
+            <a class="item" href="activities.html">Actividades</a>
+            <a class="item" href="historia.html">Historia</a>
+            <a class="item" href="map.html">Mapa</a>
+        </div>
+        <!--contenido pagina mapa-->
+        <div class="mapabox">
+            <img class="mapa" src="imagenes/MAPA.jpeg" alt=""/>
+            <img id="ringb" class="ringbutton1" src="imagenes/ringbutton.png" onclick="showModal(1)" alt=""/>
+            <img id="ringb" class="ringbutton2" src="imagenes/ringbutton.png" onclick="showModal(2)" alt=""/>
+            <img id="ringb" class="ringbutton3" src="imagenes/ringbutton.png" onclick="showModal(3)" alt=""/>
+            <img id="ringb" class="ringbutton4" src="imagenes/ringbutton.png" onclick="showModal(4)" alt=""/>
+            <img id="ringb" class="ringbutton5" src="imagenes/ringbutton.png" onclick="showModal(5)" alt=""/>
+        </div>
+        <!-- Modal de la informacion del lugar  -->
+        <div id="Modal" class="modal">
+        <!-- contenido del modal -->
+            <div id="contenidoModal"class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>...</h3>
+                <p>...</p>
+            </div>
+        </div>
+    </body>
+</html>

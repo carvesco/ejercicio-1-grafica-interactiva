@@ -12,8 +12,8 @@
     font-family: Middleearth;
     src: url('../fonts/Middleearth-ao6m.ttf');/*font del señor de los anillos*/
 }
-body {
-    background-color: #D2873A;  /* define un color de fondo para todas las páginas */
+.body {/*fondo pagina historia*/
+    background-color: #c47425;
 }
 .body1 {/*fondo pagina principal*/
     background-image: url(../imagenes/index_background.jpg);
@@ -54,6 +54,9 @@ body {
     background-size: 100% 100%;
     background-position: 0 0px;
     position: sticky;
+}
+.body6 {/*fondo pagina historia*/
+    background-color: #8d6741;
 }
 .title {/*titulo de la pagina*/
     z-index: 2;
@@ -119,7 +122,7 @@ li {
     /*display: block;*/
     color: #DAB47C;
     text-align: center;
-    padding: 5px 105px 5px 105px;
+    padding: 5px 80px 5px 80px;
     text-decoration: none;
     font-size: 17px;
     background-color: #8E5232;
@@ -339,6 +342,109 @@ li {
     text-shadow: 1px 1px #000000;
     font-size: 30px;
 }
+.mapabox{/*contenedor div del mapa*/
+    display:grid;
+    height: 100%;
+}
+.mapa{/*mapa*/
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+.ringbutton1{/*estilo del boton del mapa*/
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 610px;
+    left: 1050px;
+}
+.ringbutton2{/*estilo del boton del mapa*/
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 610px;
+    left: 750px;
+}
+.ringbutton3{/*estilo del boton del mapa*/
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 490px;
+    left: 750px;
+}
+.ringbutton4{/*estilo del boton del mapa*/
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 360px;
+    left: 890px;
+}
+.ringbutton5{/*estilo del boton del mapa*/
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 320px;
+    left: 550px;
+}
+.ringbutton1:hover{/*estilo del boton del mapa*/
+    opacity: 0.5;
+    cursor: pointer;
+}
+.ringbutton2:hover{/*estilo del boton del mapa*/
+    opacity: 0.5;
+    cursor: pointer;
+}
+.ringbutton3:hover{/*estilo del boton del mapa*/
+    opacity: 0.5;
+    cursor: pointer;
+}
+.ringbutton4:hover{/*estilo del boton del mapa*/
+    opacity: 0.5;
+    cursor: pointer;
+}
+.ringbutton5:hover{/*estilo del boton del mapa*/
+    opacity: 0.5;
+    cursor: pointer;
+}
+/* Modal de información mapa */
+.modal {
+    display: none; /* oculto */
+    position: fixed; 
+    z-index: 2; /* encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* por si se requiere hacer scroll */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+/* Contenido del modal */
+.modal-content {
+    background-color:  rgba(0, 0, 0, 0.7);
+    border-radius:5px;
+    margin: auto;
+    font-family: Middleearth;
+    color: #E6B956;
+    margin-top: 300px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+/* boton para cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #E6B956;
+    text-decoration: none;
+    cursor: pointer;
+}
 
   
 /*cambios en el aspecto de algunos elemntos en el caso de que la pantalla dismunya*/
@@ -371,7 +477,7 @@ li {
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
     .navbar a{
         padding: 5px 30px 5px 30px;
     }
@@ -387,10 +493,10 @@ li {
     
     
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .navbar a{
-        padding: 5px 5px 5px 5px;
-        font-size: 13px;
+        padding: 5px 3px 5px 3px;
+        font-size: 11px;
     }
     .map {
         width: 100%;
